@@ -1,4 +1,4 @@
-baseURL = "https://example.pages.dev/"  # 後でCloudflareのURLに変更
+baseURL = "https://my-hugo-blog-54a.pages.dev/"  # 後でCloudflareのURLに変更
 title = "My Hugo Blog"
 theme = "PaperMod"
 languageCode = "ja"
