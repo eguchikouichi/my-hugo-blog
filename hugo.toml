@@ -1,0 +1,37 @@
+baseURL = "https://example.pages.dev/"  # 後でCloudflareのURLに変更
+title = "My Hugo Blog"
+theme = "PaperMod"
+languageCode = "ja"
+defaultContentLanguage = "ja"
+[pagination]
+  pagerSize = 10
+enableRobotsTXT = true
+
+[params]
+  env = "production"
+  description = "Hugo + Cloudflare Pages のサンプル"
+  author = "あなたの名前"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  defaultTheme = "auto"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "ホーム"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "このサイトについて"
+    url = "/about/"
+    weight = 2
+
+[markup.goldmark.renderer]
+  unsafe = true  # iframeなどを使いたい時に必要
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
